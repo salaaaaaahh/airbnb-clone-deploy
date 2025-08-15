@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DFK - Complete Airbnb Clone Suite</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    :root { --airbnb-red: #FF385C; }
+    .bg-airbnb-red { background-color: var(--airbnb-red); }
+    .text-airbnb-red { color: var(--airbnb-red); }
+    .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .feature-card { transition: all 0.3s ease; }
+    .feature-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Hero Section -->
+  <div class="gradient-bg text-white">
+    <div class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">🏠 DFK</h1>
+        <p class="text-xl md:text-2xl mb-4">Complete Airbnb Clone Suite</p>
+        <p class="text-lg opacity-90 mb-8 max-w-3xl mx-auto">
+          A fully-featured accommodation platform with advanced search, real-time messaging, 
+          comprehensive reviews, and powerful host management tools.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="static-airbnb.html" class="bg-airbnb-red text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all font-medium">
+            🚀 Launch Main App
+          </a>
+          <a href="#features" class="border border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-gray-900 transition-all font-medium">
+            📋 Explore Features
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Status Banner -->
+  <div class="bg-green-50 border-l-4 border-green-400 p-4">
+    <div class="max-w-7xl mx-auto flex items-center">
+      <div class="flex">
+        <div class="flex-shrink-0">
+          <svg class="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="ml-3">
+          <p class="text-sm text-green-700">
+            ✅ <strong>All systems operational!</strong> API Server running on port 5000 | Frontend ready for deployment | All features implemented
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+    <!-- Quick Links -->
+    <div class="mb-12">
+      <h2 class="text-3xl font-bold text-center mb-8" id="features">🎯 Quick Access</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <a href="static-airbnb.html" class="feature-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg">
+          <div class="text-4xl mb-4">🏠</div>
+          <h3 class="text-lg font-semibold mb-2">Main Platform</h3>
+          <p class="text-gray-600 text-sm">Complete Airbnb-like experience with search, bookings, and user management</p>
+        </a>
+        
+        <a href="messaging-app.html" class="feature-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg">
+          <div class="text-4xl mb-4">💬</div>
+          <h3 class="text-lg font-semibold mb-2">Messaging</h3>
+          <p class="text-gray-600 text-sm">Real-time chat between guests and hosts with conversation management</p>
+        </a>
+        
+        <a href="reviews-app.html" class="feature-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg">
+          <div class="text-4xl mb-4">⭐</div>
+          <h3 class="text-lg font-semibold mb-2">Reviews</h3>
+          <p class="text-gray-600 text-sm">Comprehensive rating system with detailed feedback and moderation</p>
+        </a>
+        
+        <a href="host-dashboard.html" class="feature-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg">
+          <div class="text-4xl mb-4">📊</div>
+          <h3 class="text-lg font-semibold mb-2">Host Dashboard</h3>
+          <p class="text-gray-600 text-sm">Advanced analytics and property management for hosts</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Feature Overview -->
+    <div class="mb-12">
+      <h2 class="text-3xl font-bold text-center mb-8">🚀 Complete Feature Set</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Frontend Features -->
+        <div class="bg-white p-8 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold mb-6 text-blue-600">🎨 Frontend Features</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <span class="text-green-500 mr-3">✅</span>
+              <span>Advanced search with filters (location, dates, guests, price)</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-500 mr-3">✅</span>
+              <span>Responsive design with mobile-first approach</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-500 mr-3">✅</span>
+              <span>Property listings with detailed information</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-500 mr-3">✅</span>
+              <span>User authentication & profile management</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-500 mr-3">✅</span>
+              <span>Interactive booking system</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-500 mr-3">✅</span>
+              <span>Favorites & wishlist functionality</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Backend Features -->
+        <div class="bg-white p-8 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold mb-6 text-purple-600">⚙️ Backend Features</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <span class="text-green-500 mr-3">✅</span>
+              <span>RESTful API with Express.js</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-500 mr-3">✅</span>
+              <span>JWT authentication & authorization</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-500 mr-3">✅</span>
+              <span>CRUD operations for listings, users, reviews</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-500 mr-3">✅</span>
+              <span>Advanced filtering & search capabilities</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-500 mr-3">✅</span>
+              <span>Data validation & error handling</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-500 mr-3">✅</span>
+              <span>CORS configuration for frontend integration</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="mb-12">
+      <h2 class="text-3xl font-bold text-center mb-8">🛠️ Technology Stack</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-md text-center">
+          <div class="text-3xl mb-4">🎨</div>
+          <h3 class="text-lg font-semibold mb-4">Frontend</h3>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>HTML5 & CSS3</li>
+            <li>TailwindCSS</li>
+            <li>Vanilla JavaScript</li>
+            <li>Flatpickr (Date Picker)</li>
+            <li>Chart.js (Analytics)</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-6 rounded-xl shadow-md text-center">
+          <div class="text-3xl mb-4">⚡</div>
+          <h3 class="text-lg font-semibold mb-4">Backend</h3>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>RESTful API</li>
+            <li>JSON Data Store</li>
+            <li>CORS Support</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-6 rounded-xl shadow-md text-center">
+          <div class="text-3xl mb-4">🚀</div>
+          <h3 class="text-lg font-semibold mb-4">Deployment</h3>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>Vercel Ready</li>
+            <li>Netlify Compatible</li>
+            <li>GitHub Pages</li>
+            <li>Static Hosting</li>
+            <li>CDN Optimized</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Development Status -->
+    <div class="bg-white p-8 rounded-xl shadow-md">
+      <h2 class="text-2xl font-bold mb-6 text-center">📈 Development Status</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="text-3xl text-green-500 font-bold">100%</div>
+          <div class="text-sm text-gray-600">Frontend Complete</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl text-green-500 font-bold">100%</div>
+          <div class="text-sm text-gray-600">API Integration</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl text-green-500 font-bold">100%</div>
+          <div class="text-sm text-gray-600">Core Features</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl text-blue-500 font-bold">Ready</div>
+          <div class="text-sm text-gray-600">Deployment</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- API Status -->
+    <div class="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
+      <div class="flex items-center mb-4">
+        <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
+        <h3 class="text-lg font-semibold">API Server Status</h3>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <div>
+          <p><strong>Server:</strong> http://localhost:5000</p>
+          <p><strong>Health Check:</strong> /api/health</p>
+        </div>
+        <div>
+          <p><strong>Endpoints:</strong> 12+ active routes</p>
+          <p><strong>CORS:</strong> Configured for frontend</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h3 class="text-xl font-bold mb-4">🏠 DFK - Complete Airbnb Clone</h3>
+      <p class="text-gray-300 mb-4">Built with modern web technologies for a seamless user experience</p>
+      <div class="flex justify-center space-x-6 text-sm">
+        <a href="DEPLOYMENT.md" class="hover:text-blue-400">📚 Deployment Guide</a>
+        <a href="static-airbnb.html" class="hover:text-blue-400">🚀 Main App</a>
+        <a href="api-server.js" class="hover:text-blue-400">⚙️ API Source</a>
+      </div>
+      <p class="text-gray-400 text-xs mt-4">Ready for production deployment • All features implemented</p>
+    </div>
+  </footer>
+</body>
+</html>
