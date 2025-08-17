@@ -4,7 +4,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:8080',
+  origin: ['http://localhost:8080', 'http://localhost:3000', 'https://stayhubtest.netlify.app'],
   credentials: true
 }));
 app.use(express.json());
@@ -316,7 +316,7 @@ app.get('/api/health', (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`🚀 API Server running on http://localhost:${PORT}`);
-  console.log(`📊 Health check: http://localhost:${PORT}/api/health`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🚀 API Server running on http://0.0.0.0:${PORT}`);
+  console.log(`📊 Health check: http://0.0.0.0:${PORT}/api/health`);
 });
