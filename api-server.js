@@ -4,7 +4,13 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:8080', 'http://localhost:3000', 'https://stayhubtest.netlify.app'],
+  origin: [
+    'http://localhost:8080',
+    'http://localhost:3000',
+    'https://stayhubtest.netlify.app',
+    'https://airbnb-clone-deploy-production.
+up.railway.app'
+  ],
   credentials: true
 }));
 app.use(express.json());
@@ -309,7 +315,7 @@ app.post('/api/bookings', (req, res) => {
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({
-    status: 'success',
+    const PORT = process.env.PORT || 8080;
     message: 'API is running',
     timestamp: new Date().toISOString()
   });
